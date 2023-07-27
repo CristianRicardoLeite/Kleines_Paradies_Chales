@@ -1,0 +1,141 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ysabeau Infant', sans-serif;
+}
+
+.mainContainer {
+  background-image: url('assets/Sitio.jpg');
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header {
+  background-color: #39391B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: fixed;
+  top: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  z-index: 9;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+h4 {
+  z-index: 15;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+h5 {
+  z-index: 10;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.mainContainer:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+iframe {
+  z-index: 99;
+  border-radius: 10px;
+  -webkit-box-shadow: -18px 8px 46px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -18px 8px 46px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -18px 8px 46px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 480px) {
+
+  .mainContainer {
+    justify-content: space-evenly;
+    background-position: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: -90px;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+/* Dispositivos de tela média (tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: -50px;
+  }
+
+  h4,
+  h5 {
+    font-size: 1.8rem;
+  }
+
+  iframe {
+    height: 400px;
+    width: 100%;
+  }
+}
+
+/* Dispositivos de tela grande (desktops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  .mainContainer {
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-top: -20px;
+  }
+
+  h4,
+  h5 {
+    font-size: 2.2rem;
+  }
+
+  iframe {
+    height: 400px;
+    width: 100%;
+  }
+}
