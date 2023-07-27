@@ -9,8 +9,6 @@ export const Home = () => {
         <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Header />
             <Banner />
-
-            Estamos na pagina Home
             <Schedule />
         </div>
     )

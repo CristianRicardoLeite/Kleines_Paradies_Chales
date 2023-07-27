@@ -10,6 +10,9 @@ export const Header = () => {
             <HeaderLinks class='links' to='/contato'> contato</HeaderLinks>
             <HeaderLinks class='links' to='/pacotes-de-servicos'> pacotes de servicos</HeaderLinks>
             <HeaderLinks class='links' to='/servicos'> servicos</HeaderLinks>
+            <button style={{ color: '#fff', fontSize: '2rem', background: 'transparent', borderRadius: "25px" }}>
+                Reserve sua estadia
+            </button>
         </Container>
     )
 }
