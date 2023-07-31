@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Header } from '../../components'
+import { Header, Banner } from '../../components'
 
 export const Services = () => {
     return (
         <div>
             <Header />
-            Estamos na pagina de serviços
+            <Banner image="src/assets/Servicos.webp" page_title='Serviços' description='Torne essa viagem a experiência inigualavel' />
+            {/* CARDS DE SERVICOS */}
             <Link to='/'>Vá para home</Link>
         </div>
     )

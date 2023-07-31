@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Header } from '../../components'
+import { Header, Banner } from '../../components'
 
 export const Galerie = () => {
     return (
         <div>
             <Header />
-            Estamos na pagina da galeria
+            <Banner image="src/assets/Sitio.jpg" page_title='Galeria' description='Descubra os encantos do Kleines Paradies' />
             <Link to='/'>Vá para home</Link>
         </div>
     )

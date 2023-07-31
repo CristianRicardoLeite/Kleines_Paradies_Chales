@@ -1,6 +1,5 @@
 import React from 'react'
-import { Header, Schedule } from '../../components'
-import { Banner } from './styles'
+import { Header, Schedule, Banner } from '../../components'
 
 export const Home = () => {
 
@@ -8,7 +7,7 @@ export const Home = () => {
     return (
         <div style={{ display: 'flex', flexDirection: 'column' }}>
             <Header />
-            <Banner />
+            <Banner image="src/assets/Sitio.jpg" />
             <Schedule />
         </div>
     )

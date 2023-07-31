@@ -37,13 +37,14 @@ cursor: pointer;
 
     a{
         text-decoration: none;
+        color: black;
     }
 
     &::after{
         content: '';
         height: 3px;
-        width: ${props => props.isActive ? '100%' : 0};
-        background-color: #18180e;
+        width: ${props => props.active ? '100%' : 0};
+        background: linear-gradient(90deg, rgba(146,98,40,1) 5%, rgba(203,178,106,1) 50%, rgba(146,98,40,1) 95%);
         position: absolute;
         bottom: -6px;
         left: 50%;

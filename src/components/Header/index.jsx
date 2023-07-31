@@ -10,22 +10,22 @@ export const Header = () => {
     return (
         <Container>
             <Menu>
-                <Li isActive={pathname === '/atrativos'}>
-                    <HeaderLink to='/atrativos'>atrativos</HeaderLink>
+                <Li active={pathname === '/atrativos'}>
+                    <HeaderLink to='/atrativos'>Atrativos</HeaderLink>
                 </Li>
-                <Li isActive={pathname === '/chales'}>
+                <Li active={pathname === '/chales'}>
                     <HeaderLink to="/chales">Chalés</HeaderLink>
                 </Li>
-                <Li isActive={pathname === '/galeria'}>
+                <Li active={pathname === '/galeria'}>
                     <HeaderLink to='/galeria'>Galeria</HeaderLink>
                 </Li>
-                <Li isActive={pathname === '/contato'}>
+                <Li active={pathname === '/contato'}>
                     <HeaderLink to="/contato">Contato</HeaderLink>
                 </Li>
-                <Li isActive={pathname === '/pacotes-de-servicos'}>
+                <Li active={pathname === '/pacotes-de-servicos'}>
                     <HeaderLink to="/pacotes-de-servicos">Pacotes de servicos</HeaderLink>
                 </Li>
-                <Li isActive={pathname === '/servicos'}>
+                <Li active={pathname === '/servicos'}>
                     <HeaderLink to="/servicos">Servicos</HeaderLink>
                 </Li>
             </Menu>
